@@ -1,0 +1,10 @@
+html {
+    box-sizing: border-box;
+    /* prevents extra width or height to the page */
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    /* vh stands for viewport height which is height of the entire window */
+
+}
