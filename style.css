@@ -31,5 +31,87 @@ border-radius: 10px;
 background-color: rgba(255, 255, 255, 0.4);
 /* box shadow is used 0 is horiz 10px is vertical , 10   px is blur 10 px is radius and use other rgba */
 box-shadow:0 10px 10px 10px rgba(0,0,0,0.8);
+}
+.quote-text{
+    font-size: 2.75rem;
+}
+.long-quote{
+    /* using Javascript we'll change the size of these class long quote dynamically */
+    font-size: 2rem;
+}
+.fa-quote-left{
+    font: size 4rem;
+}
+.quote-author{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
 
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(25, 25, 25, 0.65);
+
+
+
+}
+button:hover {
+   filter: brightness(110%); 
+   /* easy way to do hover gets more brighter */
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(0 , 0, 0, 0.65);
+
+
+}
+
+.twitter-button:hover{
+    color: #38a1f3;
+
+}
+.fa-twitter{
+    font-size: 1.5rem;
+
+}
+
+/* loader css */
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #333; /* grey */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+/* Media Query: tablet or smaller devices we use media query */
+@media screen and (max-width:1000px)  {
+    .quote-container{
+        margin: auto 10px;
+    }
+    .quote-text{
+        font-size: 2.5rem;
+    }
 }
